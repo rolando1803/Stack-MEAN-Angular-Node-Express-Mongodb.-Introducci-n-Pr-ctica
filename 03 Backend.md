@@ -53,12 +53,12 @@
 ![image](https://github.com/user-attachments/assets/fc9b2c20-975d-4ecf-a111-c729aff5d7e2)
 ![image](https://github.com/user-attachments/assets/ae40666a-3d6a-4720-9ed7-2dee82ea57bb)
 
-#contenedor mongo
+# contenedor mongo
 ```bash
 docker run -d --name mongodb -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=tuContraseñaSegura# -p 27017:27017 --mount src=db_mongo,dst=/data/db mongo:latest
 
 ```
-#conexion a mongo
+# conexion a mongo
 ```javascript
 const mongoose = require('mongoose');
 
