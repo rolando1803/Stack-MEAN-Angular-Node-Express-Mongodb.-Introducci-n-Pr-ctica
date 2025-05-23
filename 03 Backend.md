@@ -54,8 +54,7 @@
 ![image](https://github.com/user-attachments/assets/ae40666a-3d6a-4720-9ed7-2dee82ea57bb)
 
 ```javascript
-goDB autenticado correctamente'))
-.catch(err => {const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 // Codifica la contraseña para caracteres especiales
 const password = encodeURIComponent('tuContraseñaSegura#'); // ¡Esto es crucial!
@@ -68,7 +67,8 @@ mongoose.connect(DB_URI, {
   serverSelectionTimeoutMS: 5000,
   socketTimeoutMS: 45000
 })
-.then(() => console.log('Mon
+.then(() => console.log('MongoDB autenticado correctamente'))
+.catch(err => {
   console.error('Error de conexión:', err.message); // Muestra solo el mensaje de error
   process.exit(1);
 });
