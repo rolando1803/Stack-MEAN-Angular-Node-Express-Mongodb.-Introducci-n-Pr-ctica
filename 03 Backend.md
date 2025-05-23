@@ -52,8 +52,10 @@
 ![image](https://github.com/user-attachments/assets/03314cdd-5cce-4626-ad5a-6a2382060bcd)
 ![image](https://github.com/user-attachments/assets/fc9b2c20-975d-4ecf-a111-c729aff5d7e2)
 ![image](https://github.com/user-attachments/assets/ae40666a-3d6a-4720-9ed7-2dee82ea57bb)
-´´´javascript
-const mongoose = require('mongoose');
+
+```javascript
+goDB autenticado correctamente'))
+.catch(err => {const mongoose = require('mongoose');
 
 // Codifica la contraseña para caracteres especiales
 const password = encodeURIComponent('tuContraseñaSegura#'); // ¡Esto es crucial!
@@ -66,12 +68,11 @@ mongoose.connect(DB_URI, {
   serverSelectionTimeoutMS: 5000,
   socketTimeoutMS: 45000
 })
-.then(() => console.log('MongoDB autenticado correctamente'))
-.catch(err => {
+.then(() => console.log('Mon
   console.error('Error de conexión:', err.message); // Muestra solo el mensaje de error
   process.exit(1);
 });
-´´´
+```
 ![image](https://github.com/user-attachments/assets/999678f5-4c56-4d94-ae44-fdda2a2323f1)
 ![image](https://github.com/user-attachments/assets/cc41fba2-43d9-4e17-a3af-a9b6b436f8aa)
 ![image](https://github.com/user-attachments/assets/19c99bca-c9e1-495b-8aee-8f444a0b273b)
